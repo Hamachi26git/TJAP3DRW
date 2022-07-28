@@ -605,6 +605,7 @@ namespace TJAPlayer3
             Gauge_Dan[3] = TxC(GAME + GAUGE + @"1P_Dan_Clear.png");
 
             Gauge_Soul = TxC(GAME + GAUGE + @"Soul.png");
+            Gauge_Soul_Flash = TxC(GAME + @"Soul_Flash.png");
             Gauge_Flash = TxC(GAME + GAUGE + @"Flash.png");
             Gauge_Soul_Fire = TxC(GAME + GAUGE + @"Fire.png");
             Gauge_Soul_Explosion = new CTexture[2];
@@ -1068,6 +1069,7 @@ namespace TJAPlayer3
             Gauge_Rainbow,
             Gauge_Soul_Explosion;
         public CTexture Gauge_Soul,
+            Gauge_Soul_Flash,
             Gauge_Flash,
             Gauge_Soul_Fire;
         public CTexture[] Gauge_Dan;

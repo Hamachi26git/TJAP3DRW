@@ -333,11 +333,24 @@ namespace TJAPlayer3
                     for (int i = 0; i < TJAPlayer3.ConfigIni.nPlayerCount; i++)
                     {
                         if (this.db現在のゲージ値[i] >= 100.0)
-						{
-                            TJAPlayer3.Tx.Chara_Ef.t2D描画(TJAPlayer3.app.Device, 10, nCharaEf[ i ]);
+                        {
+                            TJAPlayer3.Tx.Chara_Ef.t2D描画(TJAPlayer3.app.Device, 10, nCharaEf[i]);
                             TJAPlayer3.Tx.Chara_Ef.Opacity = (int)(176.0 + 80.0 * Math.Sin((double)(2 * Math.PI * this.ctCharaEf.n現在の値 * 2 / 100.0)));
                         }
 
+                    }
+                }
+
+                if (TJAPlayer3.Tx.Gauge_Soul_Flash != null)
+                {
+                    int[] nSoulY = new int[] { 125, 516, 0, 0 };
+                    for (int i = 0; i < TJAPlayer3.ConfigIni.nPlayerCount; i++)
+                    {
+                        if (this.db現在のゲージ値[i] >= 100.0)
+                        {
+                            if (ctSoul.n現在の値 % 2 == 0)
+                                TJAPlayer3.Tx.Gauge_Soul_Flash.t2D描画(TJAPlayer3.app.Device, 1184, nSoulY[i]);
+                        }
                     }
                 }
 

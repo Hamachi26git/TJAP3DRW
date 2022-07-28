@@ -111,6 +111,7 @@ namespace TJAPlayer3
 		#region [ private ]
 		//-----------------
 		private CCounter ct登場用;
+
         private CTexture txMusicName;
 		private CPrivateFastFont pfMusicName;
 		//-----------------
